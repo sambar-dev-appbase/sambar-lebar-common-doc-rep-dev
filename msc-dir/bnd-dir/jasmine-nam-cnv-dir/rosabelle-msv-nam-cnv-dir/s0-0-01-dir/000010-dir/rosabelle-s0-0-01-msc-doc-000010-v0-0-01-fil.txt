@@ -1,0 +1,34 @@
+1. Document metadata: 
+
+	1.1. Title: Microservice Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: rosabelle-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: rosabelle
+		1.6.2. Name: microservice-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. The naming convention for microservices is primarily driven by the type of functionality they provide. For instance, microservices such as "user-authentication," "user-invitation," and "user-sms-notification" reflect their specific functional areas.
+
+	2.2. This naming approach extends beyond the main functionality to encompass additional characteristics that aid in identifying and classifying microservices. These characteristics include:
+
+		2.2.1. Block and Flow Number Four- or Five-Digit Code: These identifiers differentiate between individual blocks and flows within the microservice, providing a granular level of organization.
+
+		2.2.2. Subscription Plan Two-Digit Code: This attribute indicates the subscription plan associated with the microservice, ensuring alignment with the pricing structure.
+
+		2.2.3. Country Two-Digit Code: This code specifies the country or region targeted by the microservice, enabling regional targeting and customization.
+
+		2.2.4. Language Two-Digit Code: This code identifies the primary language supported by the microservice, facilitating localization and language-specific adaptations.
+
+		2.2.5. Environment Two- or Three-Digit Code: This code denotes the environment in which the microservice operates, such as production, staging, or development.
+
+		2.2.6. Cloud Provider Two-Digit Code: This code identifies the cloud provider where the microservice is hosted, such as AWS, Azure, or GCP.

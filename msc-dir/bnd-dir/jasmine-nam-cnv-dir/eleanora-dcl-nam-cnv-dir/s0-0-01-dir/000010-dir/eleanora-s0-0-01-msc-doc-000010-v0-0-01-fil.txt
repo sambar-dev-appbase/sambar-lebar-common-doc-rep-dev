@@ -1,0 +1,40 @@
+1. Document metadata: 
+
+	1.1. Title: Database Cluster Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: eleanora-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: eleanora
+		1.6.2. Name: database-cluster-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. The naming convention for RDS clusters follows a structured approach to ensure clear identification and organization of the data they store. Each cluster name incorporates several characteristics that provide additional context and granularity.
+
+	2.2. RDS Cluster Name Composition: The RDS cluster name is primarily derived from the type of data it holds. For instance, the RDS cluster named "user-account-number-0203-sd2" explicitly conveys that it stores user account numbers. This naming scheme provides immediate insight into the data's nature and facilitates easy identification among multiple clusters.
+
+	2.3. Additional RDS Cluster Characteristics: To further distinguish RDS clusters and provide more context, their names include additional characteristics:
+
+		2.3.1. User or Analyst Specification: This indicates whether the cluster is primarily intended for user or analyst usage. This information is crucial for ensuring alignment with specific data access patterns and permissions.
+
+		2.3.2. Flow and Block Numbers: These identify the specific flow and block associated with the RDS cluster. This granular information provides a deeper understanding of the cluster's role within the overall data architecture.
+
+		2.3.3. Environment Two-Digit Code: This specifies the environment in which the RDS cluster resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev). This code facilitates data isolation and management, ensuring that data access and usage align with the intended environment.
+
+	2.4. By adhering to a consistent and informative naming convention for RDS clusters, we achieve several benefits:
+
+		2.4.1. Enhanced Cluster Identification: The clear and descriptive names make it easier to identify and distinguish between RDS clusters, reducing ambiguity and minimizing the risk of errors.
+
+		2.4.2. Promoted Easier Maintenance: The consistent naming structure simplifies maintenance tasks, such as identifying clusters associated with specific data types or environments, streamlining troubleshooting and configuration management.
+
+		2.4.3. Simplified Collaboration: The informative names facilitate collaboration among developers and data analysts, providing a shared understanding of the data organization and enabling seamless communication regarding data access and management.
+
+		2.4.4. In conclusion, the carefully designed naming convention for RDS clusters plays a crucial role in ensuring data organization, promoting efficient management, and fostering effective collaboration within the development team.

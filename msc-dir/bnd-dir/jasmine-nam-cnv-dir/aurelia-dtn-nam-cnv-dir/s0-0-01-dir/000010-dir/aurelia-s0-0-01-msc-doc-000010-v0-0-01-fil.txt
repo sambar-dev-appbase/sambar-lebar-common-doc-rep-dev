@@ -1,0 +1,32 @@
+1. Document metadata: 
+
+	1.1. Title: DynamoDB Table Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: aurelia-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: aurelia
+		1.6.2. Name: dynamodb-table-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. The naming convention for DynamoDB tables is based on the type of data they store, ensuring clear identification and organization. Each table name incorporates several characteristics that provide additional context and granularity.
+
+	2.2. DynamoDB Table Name Composition: The DynamoDB table name is derived from the primary type of data it holds. For example, the DynamoDB table named "user-register-plan-0203-sd2" explicitly conveys that it stores user registration subscription plan values.
+
+	2.3. Additional DynamoDB Table Characteristics: To further distinguish DynamoDB tables and provide more context, their names include additional characteristics:
+
+		2.3.1. User or Analyst Specification: This indicates whether the table is primarily intended for user or analyst usage, ensuring alignment with specific data access patterns and permissions.
+
+		2.3.2. Flow and Block Numbers: These identify the specific flow and block associated with the DynamoDB table, providing a more granular understanding of its role within the data architecture.
+
+		2.3.3. Environment Two-Digit Code: This specifies the environment in which the DynamoDB table resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
+
+		2.3.4. By incorporating these characteristics into DynamoDB table names, we establish a consistent and informative naming convention that enhances table identification, promotes easier maintenance, and simplifies collaboration among developers and data analysts.

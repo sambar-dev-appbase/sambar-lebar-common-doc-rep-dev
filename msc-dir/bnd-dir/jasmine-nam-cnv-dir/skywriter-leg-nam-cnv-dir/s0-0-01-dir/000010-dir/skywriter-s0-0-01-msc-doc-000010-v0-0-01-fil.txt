@@ -1,0 +1,28 @@
+1. Document metadata: 
+
+	1.1. Title: Leg Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: skywriter-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: skywriter
+		1.6.2. Name: leg-alias-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. Leg Naming Convention:
+	
+		2.1.1. The naming convention for microservice legs is derived from the specific functionality they perform or the granular purpose they serve. This approach ensures that leg names clearly convey their intended function and align with the overall microservice architecture.
+
+		2.1.2. For instance, the leg named "Get Subscription Plan Value from the DynamoDB Table" derives its name from the function it performs within the microservice "ua0203-no-us-en-sd2-lo". This naming scheme aptly captures the leg's responsibility of retrieving subscription plan values from the DynamoDB table.
+
+		2.1.3. Similarly, the leg named "EKS Cluster Authorization" draws its name from the resources it creates. This naming convention reflects the leg's primary function of establishing authorization for EKS clusters.
+
+		2.1.4. By adhering to this naming convention, microservice legs become self-explanatory and easily distinguishable, enhancing the overall clarity and maintainability of the microservice architecture.

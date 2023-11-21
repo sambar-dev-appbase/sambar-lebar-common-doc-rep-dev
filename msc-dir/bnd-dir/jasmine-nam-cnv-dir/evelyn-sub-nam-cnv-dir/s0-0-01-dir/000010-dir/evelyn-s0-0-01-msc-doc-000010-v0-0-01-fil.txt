@@ -1,0 +1,46 @@
+1. Document metadata: 
+
+	1.1. Title: Subnet Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: evelyn-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: evelyn
+		1.6.2. Name: subnet-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. The naming convention for subnets is based on the specific purpose they serve, ensuring clear identification and alignment with their intended usage. Each subnet name incorporates several characteristics that provide additional context and granularity.
+
+	2.2. Subnet Name Composition: Subnet names are primarily derived from the service or resource they support. For example, subnets dedicated to MySQL databases inherit their names from the corresponding MySQL databases, ensuring a clear connection between the subnet and the data it serves. Similarly, subnets associated with EKS clusters adopt the cluster name as their prefix, such as "eks-cluster-one-sd2," providing immediate identification of the cluster they belong to.
+
+	2.3. Additional Subnet Characteristics: To further distinguish subnets and provide more context, their names often include additional characteristics:
+
+		2.3.1. Service Type Prefix: Subnet names are prefixed with the type of service they support, such as "rds" for MySQL databases, "eks" for EKS clusters, or "ec2" for Amazon Elastic Compute Cloud (EC2) instances. This prefix clearly indicates the subnet's primary function. As an example, consider the subnet named "rds-user-account-number-0203-subnet-sd2-2a". The prefix "rds" indicates that this subnet is intended for an Amazon RDS-managed MySQL database. The remaining parts of the name provide additional context and unique identification, such as the user account number, environment code, and availability zone.
+
+		2.3.2. Cluster Serial Number: Subnets associated with clusters, such as EKS clusters, incorporate a serial number, such as "one," "two," or "three," to differentiate between multiple clusters within the same service type. This numbering scheme provides a structured approach to identifying subnets related to specific clusters.
+
+		2.3.3. Two-Digit Environment Code: Subnet names include a two-digit environment code, such as "sd2" for Sambar Development, to indicate the environment in which the subnet resides. This code facilitates data isolation and management, ensuring that subnet usage aligns with the intended environment.
+
+		2.3.4. Resource Classifier: To clearly identify the resource type, the word "subnet" is included in the subnet name.
+
+		2.3.5. Availability Zone Code: Subnet names also include a one-letter availability zone code, such as "a", "b", "c" or "d" combined with a one-digit code related to the cloud provider region, such as "2" for London or "1" for Northern Virginia. This code specifies the physical location of the subnet within the cloud provider's infrastructure.
+
+	2.4. Adhering to a consistent and informative naming convention for subnets offers several benefits:
+
+		2.4.1. Enhanced Subnet Identification: The clear and descriptive names make it easier to identify and distinguish between subnets, reducing ambiguity and minimizing the risk of misconfiguration.
+
+		2.4.2. Promoted Easier Maintenance: The consistent naming structure simplifies maintenance tasks, such as identifying subnets associated with specific services or environments, streamlining troubleshooting and configuration management.
+
+		2.4.3. Simplified Collaboration: The informative names facilitate collaboration among network engineers, developers, and other stakeholders, providing a shared understanding of the network topology and enabling seamless communication regarding subnet allocation and usage.
+
+		2.4.4. Effective Network Organization: The carefully designed naming convention for subnets plays a crucial role in ensuring network organization, promoting efficient management, and fostering effective collaboration within the IT team.
+
+		2.4.5. In conclusion, the structured naming convention for subnets ensures clear identification, promotes easier maintenance, and facilitates collaboration among IT professionals, contributing to a well-organized and efficiently managed network infrastructure.

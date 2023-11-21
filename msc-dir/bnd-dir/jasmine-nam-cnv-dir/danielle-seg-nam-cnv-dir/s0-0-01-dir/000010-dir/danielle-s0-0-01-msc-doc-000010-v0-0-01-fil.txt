@@ -1,0 +1,28 @@
+1. Document metadata: 
+
+	1.1. Title: Security Group Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: danielle-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: danielle
+		1.6.2. Name: security-group-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. The naming convention for security groups follows a structured approach that reflects their purpose and facilitates easy identification within the infrastructure. It incorporates specific characteristics that provide context and clear differentiation:
+
+		2.1.1. Security Group Classifier: The classifier "sg" is explicitly included in the name to explicitly indicate the resource type. This classification ensures consistency and facilitates easy identification of security groups among other infrastructure resources.
+
+		2.1.2. Associated Resource Name: The name of the associated resource, such as a RDS database or an EC2 instance, is incorporated into the security group name. This provides context and clearly identifies the resource or service that the security group protects.
+
+		2.1.3. Two-Digit Environment Code: A two-digit environment code, such as "sd2" for Sambar Development, is incorporated into the security group name to specify the environment in which the security group resides. This code helps in maintaining data isolation and management, ensuring that security group usage aligns with the intended environment.
+
+		2.1.4. By incorporating these characteristics, the security group naming convention provides a clear and structured approach to identifying and managing security groups within the infrastructure. This naming scheme promotes consistent naming practices and enhances overall network security management.

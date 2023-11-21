@@ -1,0 +1,42 @@
+1. Document metadata: 
+
+	1.1. Title: S3 Bucket Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: arielle-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: arielle
+		1.6.2. Name: bucket-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. The naming convention for S3 buckets is meticulously structured to ensure clear identification and organization of the data they store. Each bucket name incorporates several characteristics that provide additional context and granularity.
+
+	2.2. S3 Bucket Name Composition: The S3 bucket name is primarily derived from the type of data it holds. For instance, the S3 bucket named "user-registration-image-0203-sd2-nov-23" explicitly conveys that it stores user registration images, including profile pictures, government ID images, and TAX ID images.
+
+	2.3. Additional S3 Bucket Characteristics: To further distinguish S3 buckets and provide more context, their names include additional characteristics:
+
+		2.3.1. User or Analyst Specification: This indicates whether the bucket is primarily intended for user or analyst usage, ensuring alignment with specific data access patterns and permissions.
+
+		2.3.2. Flow and Block Numbers: These identify the specific flow and block associated with the S3 bucket, providing a more granular understanding of its role within the data architecture.
+
+		2.3.3. Environment Two- or Three-Digit Code: This specifies the environment in which the S3 bucket resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
+
+		2.3.4. Unique Requirements for User Registration Image S3 Buckets: The S3 buckets dedicated to storing user registration images have unique requirements that are reflected in their names. For example, the name "user-registration-image-0203-sd2-nov-23" incorporates a month three-digit code (nov) and a year two-digit code (23). These characteristics are essential for identifying which S3 bucket holds images for a specific month.
+
+	2.4. By adhering to a consistent and informative naming convention for S3 buckets, we achieve several benefits:
+
+		2.4.1. Enhanced Bucket Identification: The clear and descriptive names make it easier to identify and distinguish between S3 buckets, reducing ambiguity and minimizing the risk of errors.
+
+		2.4.2. Promoted Easier Maintenance: The consistent naming structure simplifies maintenance tasks, such as identifying buckets associated with specific data types or environments, streamlining troubleshooting and configuration management.
+
+		2.4.3. Simplified Collaboration: The informative names facilitate collaboration among developers and data analysts, providing a shared understanding of the data organization and enabling seamless communication regarding data access and management.
+
+		2.4.4. In conclusion, the carefully designed naming convention for S3 buckets plays a crucial role in ensuring data organization, promoting efficient management, and fostering effective collaboration within the development team.

@@ -1,0 +1,18 @@
+1. Document metadata: 
+
+	1.1. Title: uBLOCKr Alias Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: This comprehensive guide delves into the intricacies of alias names, providing a thorough understanding of their purpose, usage, and application within web applications and their backend components. It specifically focuses on the usage of alias names in Sambar, LeBar, and BOTops, showcasing practical examples and best practices to enhance your web development expertise.
+	1.3. Identification: dreamweaver-s0-0-01-msc-doc-000020
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: dreamweaver
+		1.6.2. Name: ublockr-alias-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000020
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 16, 2023
+
+2. Subject Introduction
