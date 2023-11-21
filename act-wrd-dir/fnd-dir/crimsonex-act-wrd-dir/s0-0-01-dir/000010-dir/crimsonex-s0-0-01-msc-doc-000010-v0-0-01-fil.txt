@@ -1,0 +1,124 @@
+1. Document metadata: 
+
+	1.1. Title: Action Words for the Sambar, LeBar and BOTops Web Applications
+	1.2. Description: This document provides a detailed explanation of the action words used within the Sambar, LeBar, and BOTops Web Applications.
+	1.3. Identification: crimsonex-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: crimsonex
+		1.6.2. Name: action-word
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 20, 2023
+
+2. List of Action Words:
+
+| -------------- | ----------------- |
+| Action Word    | Six-Digit Code    |
+| -------------- | ----------------- |
+| what           | 000010            |
+| how            | 000020            |
+| when           | 000030            |
+| why            | 000040            |
+| example        | 000050            |
+| question       | 000060            |
+| describe       | 000070            |
+| who            | 000080            |
+| where          | 000090            |
+| answer         | 000100            |
+| create         | 000110            |
+| deploy         | 000120            |
+| install        | 000130            |
+| delete         | 000140            |
+| deploy         | 000150            |
+| get            | 000160            |
+| chunk          | 000170            |
+| index          | 000180            |
+| embed          | 000190            |
+| update         | 000200            |
+| push           | 000210            |
+| pull           | 000220            |
+| merge          | 000230            |
+| put            | 000240            |
+| post           | 000250            |
+| login          | 000260            |
+| open           | 000270            |
+| upload         | 000280            |
+| read           | 000290            |
+| write          | 000300            |
+| insert         | 000310            |
+| save           | 000320            |
+| download       | 000330            |
+| search         | 000340            |
+| filter         | 000350            |
+| sort           | 000360            |
+| authenticate   | 000370            |
+| authorize      | 000380            |
+| register       | 000390            |
+| logout         | 000400            |
+| send           | 000410            |
+| verify         | 000420            |
+| validate       | 000430            |
+| format         | 000440            |
+| parse          | 000450            |
+| encode         | 000460            |
+| decode         | 000470            |
+| calculate      | 000480            |
+| generate       | 000490            |
+| populate       | 000500            |
+| export         | 000510            |
+| cache          | 000520            |
+| log            | 000530            |
+| redirect       | 000540            |
+| render         | 000550            |
+| paginate       | 000560            |
+| handle         | 000570            |
+| transform      | 000580            |
+| retrieve       | 000590            |
+| compose        | 000600            |
+| fetch          | 000610            |
+| list           | 000620            |
+| stop           | 000630            |
+| tag            | 000640            |
+| untag          | 000650            |
+| set            | 000660            |
+| start          | 000670            |
+| disable        | 000680            |
+| close          | 000690            |
+| copy           | 000700            |
+| head           | 000710            |
+| restore        | 000720            |
+| select         | 000730            |
+| attach         | 000740            |
+| test           | 000750            |
+| notify         | 000760            |
+| manage         | 000770            |
+| batch          | 000780            |
+| complete       | 000790            |
+| detach         | 000800            |
+| enable         | 000810            |
+| enter          | 000820            |
+| execute        | 000830            |
+| exit           | 000840            |
+| record         | 000850            |
+| terminate      | 000860            |
+| associate      | 000870            |
+| disassociate   | 000880            |
+| approve        | 000890            |
+| query          | 000900            |
+| scan           | 000910            |
+| transact       | 000920            |
+| accept         | 000930            |
+| allocate       | 000940            |
+| apply          | 000950            |
+| cancel         | 000960            |
+| modify         | 000970            |
+| function       | 000980            |
+| submit         | 000990            |
+| transfer       | 001000            |
+| purchase       | 001010            |
+| -------------- | ----------------- |
