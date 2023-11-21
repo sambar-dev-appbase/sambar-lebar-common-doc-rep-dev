@@ -1,0 +1,397 @@
+1. Document metadata: 
+
+	1.1. Title: Naming Convention for the Sambar, LeBar, and BOTops Web Applications
+	1.2. Description: 
+	1.3. Identification: starlight-s0-0-01-msc-doc-000010
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: starlight
+		1.6.2. Name: application-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000010
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 21, 2023
+
+2. Subject Introduction:
+
+	2.1. The naming conventions for applications, flows, and blocks follow different guidelines:
+
+		2.1.1. Application Naming Convention: 
+
+			2.1.1.1. The naming convention for applications is primarily based on the owner's preferences and does not adhere to a strict logical process. It is essentially a name that identifies the application.
+
+		2.1.2. Flow Naming Convention: 
+
+			2.1.2.1. The naming convention for flows is based on the type of functionality they provide. For example, the flow named "Sambar User Registration" is specifically designed for handling user registration within the Sambar Web application. Similarly, the flow named "Sambar EKS Cluster" is responsible for creating EKS clusters within the Sambar Web application.
+
+		2.1.3. Block Naming Convention: The naming convention for blocks follows a similar principle to flows, but it delves into smaller, more granular aspects of the functionality. For instance, the Sambar User Registration flow consists of five distinct blocks:
+
+			2.1.3.1. Assign Account Number, Save Registration Images to S3 Bucket, Get Subscription Plan Values from DynamoDB Table.
+
+			2.1.3.2. Save User Details to DynamoDB Table, Register User into Cognito Pool.
+
+			2.1.3.3. Validate and Update Invitation Code, Save User Details from Join Now Form.
+
+			2.1.3.4. Save User Metadata to MySQL Tables, Save User Registration Payload to S3 Bucket.
+
+			2.1.3.5. Send SMS Notification, Send Email, Save SMS Log to DynamoDB Table.
+
+			2.1.3.6. These blocks represent individual steps within the overall user registration process, providing a more structured and organized approach to naming conventions.
+
+		2.1.4. Leg Naming Convention:
+
+			2.1.4.1. The naming convention for microservice legs is derived from the specific functionality they perform or the granular purpose they serve. This approach ensures that leg names clearly convey their intended function and align with the overall microservice architecture.
+
+			2.1.4.2. For instance, the leg named "Get Subscription Plan Value from the DynamoDB Table" derives its name from the function it performs within the microservice "ua0203-no-us-en-sd2-lo". This naming scheme aptly captures the leg's responsibility of retrieving subscription plan values from the DynamoDB table.
+
+			2.1.4.3. Similarly, the leg named "EKS Cluster Authorization" draws its name from the resources it creates. This naming convention reflects the leg's primary function of establishing authorization for EKS clusters.
+
+			2.1.4.4. By adhering to this naming convention, microservice legs become self-explanatory and easily distinguishable, enhancing the overall clarity and maintainability of the microservice architecture.
+
+		** 2.1.5. Asset Naming Convention:
+
+			2.1.5.1. TBD
+
+		2.1.6. Resource Naming Convention: 
+
+			2.1.6.1. Microservice Naming Convention:
+
+				2.1.6.1.1. The naming convention for microservices is primarily driven by the type of functionality they provide. For instance, microservices such as "user-authentication," "user-invitation," and "user-sms-notification" reflect their specific functional areas.
+
+				2.1.6.1.2. This naming approach extends beyond the main functionality to encompass additional characteristics that aid in identifying and classifying microservices. These characteristics include:
+
+					2.1.6.1.2.1. Block and Flow Number Four- or Five-Digit Code: These identifiers differentiate between individual blocks and flows within the microservice, providing a granular level of organization.
+
+					2.1.6.1.2.2. Subscription Plan Two-Digit Code: This attribute indicates the subscription plan associated with the microservice, ensuring alignment with the pricing structure.
+
+					2.1.6.1.2.3. Country Two-Digit Code: This code specifies the country or region targeted by the microservice, enabling regional targeting and customization.
+
+					2.1.6.1.2.4. Language Two-Digit Code: This code identifies the primary language supported by the microservice, facilitating localization and language-specific adaptations.
+
+					2.1.6.1.2.5. Environment Two- or Three-Digit Code: This code denotes the environment in which the microservice operates, such as production, staging, or development.
+
+					2.1.6.1.2.6. Cloud Provider Two-Digit Code: This code identifies the cloud provider where the microservice is hosted, such as AWS, Azure, or GCP.
+
+				** 2.1.6.1.3. Function Naming Convention:
+
+					2.1.6.1.3.1. TBD
+
+			2.1.6.2. IAM Role Naming Convention:
+
+				2.1.6.2.1. The naming convention for IAM roles in the context of the Sambar, LeBar, and BOTops web applications is designed to clearly reflect the relationship between the resources involved. It adheres to a structured approach based on the concept of "start resource" and "end resource", where the start resource initiates actions on the end resource.
+
+				2.1.6.2.2. Start Resource: The start resource is a microservice, which is a service designed to perform a specific function. Microservices are organized into a layered architecture, with the top layer consisting of microservices and the bottom layer consisting of databases and storage resources.
+
+				2.1.6.2.3. End Resource: The end resource is a database or storage component. Databases are used to store and manage data, while storage resources are used to store files and other objects.
+
+				2.1.6.2.4. The naming scheme for IAM roles reflects the relationship between the start resource and the end resource. The name of an IAM role includes the following components:
+
+					2.1.6.2.4.1. Start Resource Identifier: This identifies the microservice that initiates the actions.
+
+					2.1.6.2.4.2. End Resource Identifier: This identifies the database or storage component that is accessed.
+
+					2.1.6.2.4.3. IAM Role Classifier: The classifier "role" explicitly indicates that the resource is an IAM role.
+
+					2.1.6.2.4.4. Read/Write Indicator: A one-letter code, either "r" for read or "w" for write, indicates the type of access granted by the IAM role.
+
+					2.1.6.2.4.5. Example: The IAM role named "ua0203-no-us-en-sd2-lo-user-account-number-0203-r-role-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to read ("r") data from the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of IAM roles.
+
+					2.1.6.2.4.6. Additional Characteristics: In addition to the resource identifiers and read/write indicator, IAM roles also incorporate two-digit environment codes, such as "sd2" for Sambar Development, to specify the environment in which the IAM role resides. This code helps in maintaining data isolation and management, ensuring that IAM role usage aligns with the intended environment.
+
+					2.1.6.2.4.7. The naming convention for IAM roles in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved, facilitates easy identification of IAM roles, and promotes consistent naming practices, thereby enhancing overall network management and security.
+
+			2.1.6.3. IAM Policy Naming Convention:
+
+				2.1.6.3.1. The naming convention for IAM policies in the context of the Sambar, LeBar, and BOTops web applications is designed to clearly reflect the relationship between the resources involved. It adheres to a structured approach based on the concept of "start resource" and "end resource", where the start resource initiates actions on the end resource.
+
+				2.1.6.3.2. Start Resource: The start resource is a microservice, which is a service designed to perform a specific function. Microservices are organized into a layered architecture, with the top layer consisting of microservices and the bottom layer consisting of databases and storage resources.
+
+				2.1.6.3.3. End Resource: The end resource is a database or storage component. Databases are used to store and manage data, while storage resources are used to store files and other objects.
+
+				2.1.6.3.4. The naming scheme for IAM policies reflects the relationship between the start resource and the end resource. The name of an IAM policy typically includes the following components:
+
+					2.1.6.3.4.1. Start Resource Identifier: This identifies the microservice that initiates the actions.
+
+					2.1.6.3.4.2. End Resource Identifier: This identifies the database or storage component that is accessed.
+
+					2.1.6.3.4.3. IAM Policy Classifier: The classifier "policy" explicitly indicates that the resource is an IAM policy.
+
+					2.1.6.3.4.4. Read/Write Indicator: A one-letter code, either "r" for read or "w" for write, indicates the type of access granted by the IAM policy.
+
+					2.1.6.3.4.5. Example: The IAM policy named "ua0203-no-us-en-sd2-lo-user-account-number-0203-r-policy-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to read ("r") data from the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of IAM policies.
+
+					2.1.6.3.4.6. Additional Characteristics: In addition to the resource identifiers and read/write indicator, IAM policies also incorporate two-digit environment codes, such as "sd2" for Sambar Development, to specify the environment in which the IAM policy resides. This code helps in maintaining data isolation and management, ensuring that IAM policy usage aligns with the intended environment.
+
+					2.1.6.3.4.7. The naming convention for IAM policies in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved, facilitates easy identification of IAM policies, and promotes consistent naming practices, thereby enhancing overall network management and security.
+
+			2.1.6.4. AWS Secret Naming Convention 
+
+				2.1.6.4.1. The naming convention for AWS secrets in the context of the Sambar, LeBar, and BOTops web applications is designed to clearly reflect the relationship between the resources involved. It adheres to a structured approach based on the concept of "start resource" and "end resource," where the start resource initiates actions on the end resource.
+
+				2.1.6.4.2. Start Resource: The start resource is a microservice, which is a service designed to perform a specific function. Microservices are organized into a layered architecture, with the top layer consisting of microservices and the bottom layer consisting of databases and storage resources.
+
+				2.1.6.4.3. End Resource: The end resource is a database or storage component. Databases are used to store and manage data, while storage resources are used to store files and other objects.
+
+				2.1.6.4.4. The naming scheme for AWS secrets reflects the relationship between the start resource and the end resource. The name of an AWS secret includes the following components:
+
+					2.1.6.4.4.1. Start Resource Identifier: This identifies the microservice that initiates the actions.
+
+					2.1.6.4.4.2. End Resource Identifier: This identifies the database or storage component that is accessed.
+
+					2.1.6.4.4.3. AWS Secret Classifier: The classifier "secret" explicitly indicates that the resource is an AWS secret.
+
+					2.1.6.4.4.4. Read/Write Indicator: A one-letter code, either "r" for read or "w" for write, indicates the type of access granted by the user credentials saved into the AWS secret.
+
+					2.1.6.4.4.5. Example: The AWS secret named "ua0203-no-us-en-sd2-lo-user-account-number-0203-r-secret-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to read ("r") data from the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of AWS secrets.
+
+					2.1.6.4.4.6. Additional Characteristics: In addition to the resource identifiers and read/write indicator, AWS secrets also incorporate two-digit environment codes, such as "sd2" for Sambar Development, to specify the environment in which the AWS secret resides. This code helps in maintaining data isolation and management, ensuring that AWS secret usage aligns with the intended environment.
+
+					2.1.6.4.4.7. The naming convention for AWS secrets in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved, facilitates easy identification of AWS secrets, and promotes consistent naming practices, thereby enhancing overall network management and security.
+
+			2.1.6.5. IAM User Naming Convention // ua0203-no-us-en-sd2-lo-user-account-number-0203-r-user-sd2; ua0203-no-us-en-sd2-lo-user-account-number-0203-w-user-sd2
+
+				2.1.6.5.1. The naming convention for IAM users in the context of the Sambar, LeBar, and BOTops web applications is designed to clearly reflect the relationship between the resources involved. It adheres to a structured approach based on the concept of "start resource" and "end resource," where the start resource initiates actions on the end resource.
+
+				2.1.6.5.2. Start Resource: The start resource is a microservice, which is a service designed to perform a specific function. Microservices are organized into a layered architecture, with the top layer consisting of microservices and the bottom layer consisting of databases and storage resources.
+
+				2.1.6.5.3. End Resource: The end resource is a database or storage component. Databases are used to store and manage data, while storage resources are used to store files and other objects.
+
+				2.1.6.5.4. The naming scheme for IAM users reflects the relationship between the start resource and the end resource. The name of an IAM user typically includes the following components:
+
+				Start Resource Identifier: This identifies the microservice that initiates the actions.
+
+				End Resource Identifier: This identifies the database or storage component that is accessed.
+
+				IAM User Classifier: The classifier "user" explicitly indicates that the resource is an IAM user.
+
+				Read/Write Indicator: A one-letter code, either "r" for read or "w" for write, indicates the type of access granted by the user.
+
+				Example: The IAM user named "ua0203-no-us-en-sd2-lo-user-account-number-0203-r-user-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to read ("r") data from the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of IAM users.
+
+				Additional Characteristics: In addition to the resource identifiers and read/write indicator, IAM users also incorporate two-digit environment codes, such as "sd2" for Sambar Development, to specify the environment in which the IAM users reside. This code helps in maintaining data isolation and management, ensuring that IAM users' usage aligns with the intended environment.
+
+				The naming convention for IAM users in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved, facilitates easy identification of IAM users, and promotes consistent naming practices, thereby enhancing overall network management and security.
+
+
+
+
+
+
+
+
+
+
+
+				2.1.6.4.1. The naming convention for IAM users in the context of the Sambar, LeBar, and BOTops web applications is designed to clearly reflect the relationship between the resources involved. It adheres to a structured approach based on the concept of "start resource" and "end resource," where the start resource initiates actions on the end resource.
+
+				2.1.6.4.2. Start Resource: The start resource is a microservice, which is a service designed to perform a specific function. Microservices are organized into a layered architecture, with the top layer consisting of microservices and the bottom layer consisting of databases and storage resources.
+
+				2.1.6.4.3. End Resource: The end resource is a database or storage component. Databases are used to store and manage data, while storage resources are used to store files and other objects.
+
+				2.1.6.4.4. The naming scheme for IAM users reflects the relationship between the start resource and the end resource. The name of an IAM user includes the following components:
+
+					2.1.6.4.4.1. Start Resource Identifier: This identifies the microservice that initiates the actions.
+
+					2.1.6.4.4.2. End Resource Identifier: This identifies the database or storage component that is accessed.
+
+					2.1.6.4.4.3. IAM user Classifier: The classifier "user" explicitly indicates that the resource is an IAM user.
+
+					2.1.6.4.4.4. Read/Write Indicator: A one-letter code, either "r" for read or "w" for write, indicates the type of access granted by the user.
+
+					2.1.6.4.4.5. Example: The IAM user named "ua0203-no-us-en-sd2-lo-user-account-number-0203-r-user-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to read ("r") data from the database "user-account-number-0203-sd2". This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of IAM users.
+
+					2.1.6.4.4.6. Additional Characteristics: In addition to the resource identifiers and read/write indicator, IAM users also incorporate two-digit environment codes, such as "sd2" for Sambar Development, to specify the environment in which the IAM users resides. This code helps in maintaining data isolation and management, ensuring that IAM users usage aligns with the intended environment.
+
+					2.1.6.4.4.7. The naming convention for IAM users in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved, facilitates easy identification of AWS secrets, and promotes consistent naming practices, thereby enhancing overall network management and security.
+
+
+
+
+
+
+
+
+
+
+
+
+
+			2.1.6.6. DynamoDB Table Naming Convention:
+
+				2.1.6.6.1. The naming convention for DynamoDB tables is based on the type of data they store, ensuring clear identification and organization. Each table name typically incorporates several characteristics that provide additional context and granularity.
+
+				2.1.6.6.2. DynamoDB Table Name Composition: The DynamoDB table name is derived from the primary type of data it holds. For example, the DynamoDB table named "user-register-plan-0203-sd2" explicitly conveys that it stores user registration subscription plan values.
+
+				2.1.6.6.4. Additional DynamoDB Table Characteristics: To further distinguish DynamoDB tables and provide more context, their names include additional characteristics:
+
+					2.1.6.6.4.1. User or Analyst Specification: This indicates whether the table is primarily intended for user or analyst usage, ensuring alignment with specific data access patterns and permissions.
+
+					2.1.6.6.4.2. Flow and Block Numbers: These identify the specific flow and block associated with the DynamoDB table, providing a more granular understanding of its role within the data architecture.
+
+					2.1.6.6.4.3. Environment Two-Digit Code: This specifies the environment in which the DynamoDB table resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
+
+				2.1.6.6.9.1. By incorporating these characteristics into DynamoDB table names, we establish a consistent and informative naming convention that enhances table identification, promotes easier maintenance, and simplifies collaboration among developers and data analysts.
+
+			2.1.6.7. S3 Bucket Naming Convention:
+
+				2.1.6.7.1. The naming convention for S3 buckets is meticulously structured to ensure clear identification and organization of the data they store. Each bucket name typically incorporates several characteristics that provide additional context and granularity.
+
+				2.1.6.7.1. S3 Bucket Name Composition: The S3 bucket name is primarily derived from the type of data it holds. For instance, the S3 bucket named "user-registration-image-0203-sd2-nov-23" explicitly conveys that it stores user registration images, including profile pictures, government ID images, and TAX ID images.
+
+				2.1.6.7.1. Additional S3 Bucket Characteristics: To further distinguish S3 buckets and provide more context, their names include additional characteristics:
+
+					2.1.6.7.1.1. User or Analyst Specification: This indicates whether the bucket is primarily intended for user or analyst usage, ensuring alignment with specific data access patterns and permissions.
+
+					2.1.6.7.1.2. Flow and Block Numbers: These identify the specific flow and block associated with the S3 bucket, providing a more granular understanding of its role within the data architecture.
+
+					2.1.6.7.1.3. Environment Two- or Three-Digit Code: This specifies the environment in which the S3 bucket resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
+
+					2.1.6.7.1.4. Unique Requirements for User Registration Image S3 Buckets: The S3 buckets dedicated to storing user registration images have unique requirements that are reflected in their names. For example, the name "user-registration-image-0203-sd2-nov-23" incorporates a month three-digit code (nov) and a year two-digit code (23). These characteristics are essential for identifying which S3 bucket holds images for a specific month.
+
+				2.1.6.7.1. By adhering to a consistent and informative naming convention for S3 buckets, we achieve several benefits:
+
+					2.1.6.7.1.1. Enhanced Bucket Identification: The clear and descriptive names make it easier to identify and distinguish between S3 buckets, reducing ambiguity and minimizing the risk of errors.
+
+					2.1.6.7.1.2. Promoted Easier Maintenance: The consistent naming structure simplifies maintenance tasks, such as identifying buckets associated with specific data types or environments, streamlining troubleshooting and configuration management.
+
+					2.1.6.7.1.3. Simplified Collaboration: The informative names facilitate collaboration among developers and data analysts, providing a shared understanding of the data organization and enabling seamless communication regarding data access and management.
+
+					2.1.6.7.1.4. In conclusion, the carefully designed naming convention for S3 buckets plays a crucial role in ensuring data organization, promoting efficient management, and fostering effective collaboration within the development team.
+
+			2.1.6.8. Access Control List Naming Convention:
+
+				2.1.6.8.1. The naming convention for ACLs in the context of the Sambar, LeBar, and BOTops web applications is designed to reflect the relationship between the resources involved. It follows a structure based on the concept of "start resource" and "end resource", where the start resource initiates actions on the end resource.
+
+				2.1.6.8.2. Start Resource: The start resource is a microservice, which is a service that is designed to perform a specific function. Microservices are often organized into a layered architecture, with the top layer consisting of microservices and the bottom layer consisting of databases and storage components.
+
+				2.1.6.8.3. End Resource: The end resource is a database or storage component. Databases are used to store and manage data, while storage components are used to store files and other objects.
+
+				2.1.6.8.4. Naming Scheme: The naming scheme for ACLs reflects the relationship between the start resource and the end resource. The name of an ACL includes the following components:
+
+					2.1.6.8.4.1. Start resource identifier: This identifies the microservice that initiates the actions.
+					2.1.6.8.4.2. End resource identifier: This identifies the database or storage component that is accessed.
+					2.1.6.8.4.3. ACL classifier: The classifier "acl" explicitly indicates that the resource is an ACL.
+					2.1.6.8.4.4. Example: The ACL named "ua0203-no-us-en-sd2-lo-user-account-number-0203-acl-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to access the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of ACLs.
+
+				2.1.6.8.5. Additional Characteristics: In addition to the resource identifiers, ACLs also incorporate the "acl" classifier to explicitly indicate their type. This classifier serves as a clear identifier for the resource type and aligns with the naming convention for other infrastructure components.
+
+				2.1.6.8.6. The naming convention for ACLs in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved and facilitates easy identification of ACLs.
+
+			2.1.6.9. Subnet Naming Convention:
+
+				2.1.6.9.1. The naming convention for subnets is based on the specific purpose they serve, ensuring clear identification and alignment with their intended usage. Each subnet name typically incorporates several characteristics that provide additional context and granularity.
+
+				2.1.6.9.2. Subnet Name Composition: Subnet names are primarily derived from the service or resource they support. For example, subnets dedicated to MySQL databases inherit their names from the corresponding MySQL databases, ensuring a clear connection between the subnet and the data it serves. Similarly, subnets associated with EKS clusters adopt the cluster name as their prefix, such as "eks-cluster-one-sd2," providing immediate identification of the cluster they belong to.
+
+				2.1.6.9.3. Additional Subnet Characteristics: To further distinguish subnets and provide more context, their names often include additional characteristics:
+
+					2.1.6.9.3.1. Service Type Prefix: Subnet names are prefixed with the type of service they support, such as "rds" for MySQL databases, "eks" for EKS clusters, or "ec2" for Amazon Elastic Compute Cloud (EC2) instances. This prefix clearly indicates the subnet's primary function. As an example, consider the subnet named "rds-user-account-number-0203-subnet-sd2-2a". The prefix "rds" indicates that this subnet is intended for an Amazon RDS-managed MySQL database. The remaining parts of the name provide additional context and unique identification, such as the user account number, environment code, and availability zone.
+
+					2.1.6.9.3.2. Cluster Serial Number: Subnets associated with clusters, such as EKS clusters, incorporate a serial number, such as "one," "two," or "three," to differentiate between multiple clusters within the same service type. This numbering scheme provides a structured approach to identifying subnets related to specific clusters.
+
+					2.1.6.9.3.3. Two-Digit Environment Code: Subnet names include a two-digit environment code, such as "sd2" for Sambar Development, to indicate the environment in which the subnet resides. This code facilitates data isolation and management, ensuring that subnet usage aligns with the intended environment.
+
+					2.1.6.9.3.4. Resource Classifier: To clearly identify the resource type, the word "subnet" is included in the subnet name.
+
+					2.1.6.9.3.5. Availability Zone Code: Subnet names also include a one-letter availability zone code, such as "a", "b", "c" or "d" combined with a one-digit code related to the cloud provider region, such as "2" for London or "1" for Northern Virginia. This code specifies the physical location of the subnet within the cloud provider's infrastructure.
+
+				2.1.6.9.4. Adhering to a consistent and informative naming convention for subnets offers several benefits:
+
+					2.1.6.9.4.1. Enhanced Subnet Identification: The clear and descriptive names make it easier to identify and distinguish between subnets, reducing ambiguity and minimizing the risk of misconfiguration.
+
+					2.1.6.9.4.2. Promoted Easier Maintenance: The consistent naming structure simplifies maintenance tasks, such as identifying subnets associated with specific services or environments, streamlining troubleshooting and configuration management.
+
+					2.1.6.9.4.3. Simplified Collaboration: The informative names facilitate collaboration among network engineers, developers, and other stakeholders, providing a shared understanding of the network topology and enabling seamless communication regarding subnet allocation and usage.
+
+					2.1.6.9.4.4. Effective Network Organization: The carefully designed naming convention for subnets plays a crucial role in ensuring network organization, promoting efficient management, and fostering effective collaboration within the IT team.
+
+					2.1.6.9.4.5. In conclusion, the structured naming convention for subnets ensures clear identification, promotes easier maintenance, and facilitates collaboration among IT professionals, contributing to a well-organized and efficiently managed network infrastructure.
+
+			2.1.6.10. Subnet Group Naming Convention:
+
+				2.1.6.10.1. The naming convention for subnet groups is based on the specific purpose they serve. It incorporates the name of the associated resource, such as a RDS database, to provide context and clear identification. Additionally, subnet group names include two distinguishing characteristics:
+
+					2.1.6.10.1.1. Subnet Group Classifier: The term "subnet-group" is explicitly included in the name to explicitly indicate the resource type. This classification ensures consistency and facilitates easy identification of subnet groups within the overall infrastructure.
+
+					2.1.6.10.1.2. Associated Resource Name: The name of the associated resource, such as an RDS database, is directly integrated into the subnet group name. This approach provides clear context and effectively identifies the resource or service that the subnet group safeguards.
+
+					2.1.6.10.1.3. Two-Digit Environment Code: A two-digit environment code is incorporated into the subnet group name to specify the environment in which the subnet group resides. This code, such as "sd2" for Sambar Development, helps in maintaining data isolation and management, ensuring that subnet group usage aligns with the intended environment.
+
+					2.1.6.10.1.4. By incorporating these characteristics, the subnet group naming convention provides a clear and structured approach to identifying and managing subnet groups within the infrastructure. This naming scheme promotes consistent naming practices and enhances overall network management.
+
+			2.1.6.11. Security Group Naming Convention
+
+				2.1.6.10.1. The naming convention for security groups follows a structured approach that reflects their purpose and facilitates easy identification within the infrastructure. It incorporates specific characteristics that provide context and clear differentiation:
+
+					2.1.6.10.1.1. Security Group Classifier: The classifier "sg" is explicitly included in the name to explicitly indicate the resource type. This classification ensures consistency and facilitates easy identification of security groups among other infrastructure resources.
+
+					2.1.6.10.1.2. Associated Resource Name: The name of the associated resource, such as a RDS database or an EC2 instance, is incorporated into the security group name. This provides context and clearly identifies the resource or service that the security group protects.
+
+					2.1.6.10.1.3. Two-Digit Environment Code: A two-digit environment code, such as "sd2" for Sambar Development, is incorporated into the security group name to specify the environment in which the security group resides. This code helps in maintaining data isolation and management, ensuring that security group usage aligns with the intended environment.
+
+					2.1.6.10.1.4. By incorporating these characteristics, the security group naming convention provides a clear and structured approach to identifying and managing security groups within the infrastructure. This naming scheme promotes consistent naming practices and enhances overall network security management.
+
+			2.1.6.12. Elastic Network Interface Naming Convention:
+
+				2.1.6.12.1. The naming convention for elastic network interfaces follows a structured approach that provides clear identification and context for their purpose within the infrastructure. This approach utilizes specific characteristics to enhance differentiation and understanding:
+
+					2.1.6.12.1.1. Elastic Network Interface Classifier: The classifier "eni" is explicitly included in the name to clearly indicate the resource type. This classification ensures consistency and facilitates easy identification of elastic network interfaces among other infrastructure resources.
+
+					2.1.6.12.1.2. Associated Resource Name: The name of the associated resource, such as an RDS database or an EC2 instance, is incorporated into the elastic network interface name. This provides context and clearly identifies the resource or service that the elastic network interface supports.
+
+					2.1.6.12.1.3. Two-Digit Environment Code: A two-digit environment code, such as "sd2" for Sambar Development, is incorporated into the elastic network interface name to specify the environment in which the elastic network interface resides. This code helps in maintaining data isolation and management, ensuring that elastic network interface usage aligns with the intended environment.
+
+					2.1.6.12.1.4. By incorporating these characteristics, the elastic network interface naming convention provides a clear and structured approach to identifying and managing elastic network interfaces within the infrastructure. This naming scheme promotes consistent naming practices and enhances overall network management.
+
+			2.1.6.13. Relational Database Service (RDS) Cluster Naming Convention:
+
+				2.1.6.13.1. The naming convention for RDS clusters follows a structured approach to ensure clear identification and organization of the data they store. Each cluster name typically incorporates several characteristics that provide additional context and granularity.
+
+				2.1.6.13.2. RDS Cluster Name Composition: The RDS cluster name is primarily derived from the type of data it holds. For instance, the RDS cluster named "user-account-number-0203-sd2" explicitly conveys that it stores user account numbers. This naming scheme provides immediate insight into the data's nature and facilitates easy identification among multiple clusters.
+
+				2.1.6.13.3. Additional RDS Cluster Characteristics: To further distinguish RDS clusters and provide more context, their names include additional characteristics:
+
+					2.1.6.13.3.1. User or Analyst Specification: This indicates whether the cluster is primarily intended for user or analyst usage. This information is crucial for ensuring alignment with specific data access patterns and permissions.
+
+					2.1.6.13.3.2. Flow and Block Numbers: These identify the specific flow and block associated with the RDS cluster. This granular information provides a deeper understanding of the cluster's role within the overall data architecture.
+
+					2.1.6.13.3.3. Environment Two-Digit Code: This specifies the environment in which the RDS cluster resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev). This code facilitates data isolation and management, ensuring that data access and usage align with the intended environment.
+
+				2.1.6.13.4. By adhering to a consistent and informative naming convention for RDS clusters, we achieve several benefits:
+
+					2.1.6.13.4.1. Enhanced Cluster Identification: The clear and descriptive names make it easier to identify and distinguish between RDS clusters, reducing ambiguity and minimizing the risk of errors.
+
+					2.1.6.13.4.2. Promoted Easier Maintenance: The consistent naming structure simplifies maintenance tasks, such as identifying clusters associated with specific data types or environments, streamlining troubleshooting and configuration management.
+
+					2.1.6.13.4.3. Simplified Collaboration: The informative names facilitate collaboration among developers and data analysts, providing a shared understanding of the data organization and enabling seamless communication regarding data access and management.
+
+					2.1.6.13.4.4. In conclusion, the carefully designed naming convention for RDS clusters plays a crucial role in ensuring data organization, promoting efficient management, and fostering effective collaboration within the development team.
+
+			2.1.6.14. MySQL Database Naming Convention:
+
+				2.1.6.14. The naming convention for MySQL databases adheres to a structured approach to ensure clear identification and organization of the data they store. Each database name typically incorporates several characteristics that provide additional context and granularity.
+
+				2.1.6.14. MySQL Database Name Composition: The MySQL database name is primarily derived from the type of data it holds. For instance, the MySQL database named "user-account-number-0203-sd2" explicitly conveys that it stores user account numbers. This naming scheme provides immediate insight into the data's nature and facilitates easy identification among multiple MySQL databases.
+
+				2.1.6.14. Additional MySQL Database Characteristics: To further distinguish MySQL databases and provide more context, their names often include additional characteristics:
+
+					2.1.6.14. User or Analyst Specification: This indicates whether the database is primarily intended for user or analyst usage. This information is crucial for ensuring alignment with specific data access patterns and permissions.
+
+					2.1.6.14. Flow and Block Numbers: These identify the specific flow and block associated with the MySQL database. This granular information provides a deeper understanding of the database's role within the overall data architecture.
+
+					2.1.6.14. Environment Two-Digit Code: This specifies the environment in which the MySQL database resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev). This code facilitates data isolation and management, ensuring that data access and usage align with the intended environment.
+
+				2.1.6.14. Adhering to a consistent and informative naming convention for MySQL databases offers several benefits:
+
+					2.1.6.14. Enhanced Database Identification: The clear and descriptive names make it easier to identify and distinguish between MySQL databases, reducing ambiguity and minimizing the risk of errors.
+
+					2.1.6.14. Promoted Easier Maintenance: The consistent naming structure simplifies maintenance tasks, such as identifying databases associated with specific data types or environments, streamlining troubleshooting and configuration management.
+
+					2.1.6.14. Simplified Collaboration: The informative names facilitate collaboration among developers and data analysts, providing a shared understanding of the data organization and enabling seamless communication regarding data access and management.
+
+					2.1.6.14. Effective Data Organization: The carefully designed naming convention for MySQL databases plays a crucial role in ensuring data organization, promoting efficient management, and fostering effective collaboration within the development team.
+
+			2.1.6.15. MySQL table // user-account-number
