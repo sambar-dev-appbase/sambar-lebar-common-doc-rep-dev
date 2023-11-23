@@ -1,0 +1,132 @@
+1. Document metadata: 
+
+	1.1. Title: 
+	1.2. Description: 
+	1.3. Identification: phiruhaedra-s0-0-01-msc-doc-000620
+	1.4. Version: v0-0-01
+	1.5. Format: txt
+	1.6. Subject metadata:
+		1.6.1. Alias: phiruhaedra
+		1.6.2. Name: classifier-naming-convention
+		1.6.3. FQID: none
+		1.6.4. Version: s0-0-01
+		1.6.5. Action: 000620
+	1.7. Revision: This is the first version uploaded to the ChatBOT.
+	1.8. Author: Anna/Play.Miami
+	1.9. Date: November 23, 2023
+
+2. List of Classifiers: 
+
+| --------------------------- | ---------- |
+| Subject                     | Classifier |
+| --------------------------- | ---------- |
+| Website                     | WBS        |
+| Flow                        | FLW        |
+| BLOCK                       | BLK        |
+| Leg                         | LEG        |
+| Microservice                | MSV        |
+| Nanoservice                 | NSV        |
+| DynamoDB Table              | DTN        |
+| MySQL Table                 | MTN        |
+| Secret                      | SEC        |
+| Bucket                      | BKT        |
+| User                        | USR        |
+| Elastic Network Interface   | ENI        |
+| Access Control List         | ACL        |
+| Security Group              | SEG        |
+| Subnet Group                | SUG        |
+| Subnet                      | SUB        |
+| Comma-Separated Value       | CSV        |
+| Virtual Private Cloud       | VPC        |
+| Internet Gateway            | IGW        |
+| Secure Socket Shell         | SSH        |
+| Amazon Machine Image        | AMI        |
+| Instance                    | INC        |
+| Elastic Internet Protocol   | EIP        |
+| File                        | FIL        |
+| CloudWatch                  | CWH        |
+| Ingress Manifest            | ING        |
+| Network Load Balancer       | NLB        |
+| Certificate                 | CRT        |
+| Service Account             | SAC        |
+| Cognito Pool                | CPO        |
+| Simple Notification Service | SNS        |
+| Simple Email Service        | SES        |
+| Lambda Function             | LAM        |
+| API Gateway                 | API        |
+| Postgres Database           | PGR        |
+| Database Cluster            | DCL        |
+| Tag                         | TAG        |
+| Label                       | LAB        |
+| Namespace                   | NSP        |
+| Role                        | ROL        |
+| Policy                      | POL        |
+| Private Internet Protocol   | TIP        |
+| Match                       | MCH        |
+| Kubernetes Cluster          | CTR        |
+| Node Group                  | NGR        |
+| Node                        | NOD        |
+| Data                        | DAT        |
+| Asset                       | AST        |
+| Hosted Zone                 | HZN        |
+| Directory                   | DIR        |
+| Level                       | LVL        |
+| Diagram                     | DIA        |
+| Namecheap                   | NCH        |
+| Recaptcha                   | RCP        |
+| Ingress Controller Manifest | ICO        |
+| Network Load Balancer       | NLB        |
+| Subject                     | SBJ        |
+| Classifier                  | CLF        |
+| Function                    | FUN        |
+| Action                      | ACT        |
+| Word                        | WRD        |
+| Naming                      | NAM        |
+| Numbering                   | NUM        |
+| Convention                  | CNV        |
+| Image                       | IMG        |
+| Subleg                      | SBL        |
+| Site 						  | SIT        |
+| Static					  | STC        |
+| Page 						  | PAG        |
+| Tinput					  | TNP        |
+| Form 						  | FRM        |
+| Nologin					  | NLG        |
+| Opportunity				  | OPN 	   |
+| Widget					  | WGT        |
+| Trade						  | TRD 	   |
+| Term						  | TRM        |
+| Structure					  | STC        |
+| Demo						  | DEM        |
+| Symbol					  | SYM        |
+| Empower					  | EMP        |
+| Community					  | CNT        |
+| Article					  | ATC        |
+| Portal					  | PTL        |
+| Registration				  | REG 	   |
+| Nologin					  | LGN		   |
+| Profile					  | PRF 	   |
+| Subscription				  | SBR 	   |
+| Add   					  | ADD 	   |
+| LeBar						  | LBR 	   |
+| Edit 						  | EDT  	   |
+| Payment					  | PMT 	   |
+| History 					  | HSR 	   |
+| Tab 						  | TAB 	   |
+| Strategy 					  | STG 	   |
+| Board 					  | BRD 	   |
+| Credit 					  | CRD 	   |
+| Historical 				  | HTR 	   |
+| Dashboard 				  | DBD 	   |
+| Real 						  | REL 	   |
+| Time 						  | TIM 	   |
+| Group 					  | GRP 	   |
+| Internal 					  | ITN 	   |
+| Process 					  | PRC 	   |
+| Daily 					  | DAL 	   |
+| Tracking 					  | TRC 	   |
+| Unwinding 				  | UWD 	   |
+| Leader 					  | LDR 	   |
+| Follower 					  | FLR 	   |
+| Analyst 					  | ANT 	   |
+| --------------------------- | ---------- |
