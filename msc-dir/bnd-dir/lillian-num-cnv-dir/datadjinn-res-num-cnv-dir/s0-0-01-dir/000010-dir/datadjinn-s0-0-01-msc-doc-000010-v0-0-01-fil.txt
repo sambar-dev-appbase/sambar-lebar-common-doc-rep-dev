@@ -7,12 +7,33 @@
 	1.5. Format: txt
 	1.6. Subject metadata:
 		1.6.1. Alias: datadjinn
-		1.6.2. Name: 
+		1.6.2. Name: resource-numbering-convention
 		1.6.3. FQID: none
 		1.6.4. Version: s0-0-01
 		1.6.5. Action: 000010
 	1.7. Revision: This is the first version uploaded to the ChatBOT.
 	1.8. Author: Anna/Play.Miami
-	1.9. Date: November 16, 2023
+	1.9. Date: November 21, 2023
 
 2. Subject Introduction:
+
+	2.1. Resource numbering combines the flow, block, and leg numbers and has its own characteristic - a one-letter code. For example, the IAM role "ub02103-no-us-en-sd2-lo-ua0203-no-us-en-sd2-lo-role-sd2" is the first non-existent resource in flow-2 and block-3. It has been assigned the resource ID "2.3.4.b". From this number, we can determine that the IAM role belongs to flow-2, block-3, leg-4, and has the one-letter code "b".
+
+	2.2. Here is a table summarizing the resource numbering scheme:
+
+		2.2.1. Flow number:	The flow to which the resource belongs.
+		2.2.2. Block number: The block within the flow to which the resource belongs.
+		2.2.3. Leg number: The leg within the block to which the resource belongs.
+		2.2.4. One-letter code:	A unique code for the resource within the leg.
+
+	2.3. Resource identifications are separated by periods (".") to indicate the hierarchical relationship between the flow, block, leg, and one-letter code components. For example, the resource identification "2.3.4.b" represents the IAM role "ub02103-no-us-en-sd2-lo-ua0203-no-us-en-sd2-lo-role-sd2" and corresponds to flow-2, block-3, leg-4, and one-letter code "b".
+
+		2.3.1. Here's a breakdown of the resource identification components:
+
+			2.3.1.1. Flow number: The first number (2) represents the flow to which the resource belongs.
+
+			2.3.1.2. Block number: The second number (3) represents the block within the flow to which the resource belongs.
+
+			2.3.1.3. Leg number: The third number (4) represents the leg within the block to which the resource belongs.
+
+			2.3.1.4. One-letter code: The letter (b) is a unique code for the resource within the leg.

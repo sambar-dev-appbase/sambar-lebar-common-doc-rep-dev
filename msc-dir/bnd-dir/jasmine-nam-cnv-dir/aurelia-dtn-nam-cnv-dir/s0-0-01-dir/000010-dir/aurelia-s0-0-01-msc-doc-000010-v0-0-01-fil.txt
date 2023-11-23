@@ -27,6 +27,6 @@
 
 		2.3.2. Flow and Block Numbers: These identify the specific flow and block associated with the DynamoDB table, providing a more granular understanding of its role within the data architecture.
 
-		2.3.3. Environment Two-Digit Code: This specifies the environment in which the DynamoDB table resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
+		2.3.3. Environment Two- or Three-Digit Code: This specifies the environment in which the DynamoDB table resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
 
 		2.3.4. By incorporating these characteristics into DynamoDB table names, we establish a consistent and informative naming convention that enhances table identification, promotes easier maintenance, and simplifies collaboration among developers and data analysts.

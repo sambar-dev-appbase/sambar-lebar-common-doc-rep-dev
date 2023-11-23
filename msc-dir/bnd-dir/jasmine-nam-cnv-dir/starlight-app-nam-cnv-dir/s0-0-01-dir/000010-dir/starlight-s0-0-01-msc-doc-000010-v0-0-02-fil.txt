@@ -17,8 +17,8 @@
 
 2. Subject Introduction:
 
-	2.1. The naming conventions for applications, flows, and blocks follow different guidelines:
+	2.1. Application Naming Convention: 
 
-		2.1.1. Application Naming Convention: 
+		2.1.1. In the context of the backend of Sambar, LeBar, and BOTops, a naming convention refers to a set of guidelines and rules for naming web applications.
 
-			2.1.1.1. The naming convention for applications is primarily based on the owner's preferences and does not adhere to a strict logical process. It is essentially a name that identifies the application.
+		2.1.2. The naming convention for applications is primarily based on the owner's preferences and does not adhere to a strict logical process. It is essentially a name that identifies the application.

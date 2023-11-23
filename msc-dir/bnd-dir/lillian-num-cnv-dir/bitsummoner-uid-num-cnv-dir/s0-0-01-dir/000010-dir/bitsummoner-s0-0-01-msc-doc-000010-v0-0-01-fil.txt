@@ -1,18 +1,30 @@
 1. Document metadata: 
 
-	1.1. Title: 
+	1.1. Title: Unix User Numbering Convention for the Sambar, LeBar, and BOTops Web Applications
 	1.2. Description: 
 	1.3. Identification: bitsummoner-s0-0-01-msc-doc-000010
 	1.4. Version: v0-0-01
 	1.5. Format: txt
 	1.6. Subject metadata:
 		1.6.1. Alias: bitsummoner
-		1.6.2. Name: 
+		1.6.2. Name: unix-user-identification-numbering-convention
 		1.6.3. FQID: none
 		1.6.4. Version: s0-0-01
 		1.6.5. Action: 000010
 	1.7. Revision: This is the first version uploaded to the ChatBOT.
 	1.8. Author: Anna/Play.Miami
-	1.9. Date: November 16, 2023
+	1.9. Date: November 22, 2023
 
 2. Subject Introduction:
+
+	2.1. The Unix User Identification Number for each microservice is calculated using a specific formula. Here's a step-by-step guide using the example of flow-2, block-3, microservice-03:
+
+		2.1.1. Start Number: Begin with the starting number 2000, which is the base value for all Unix User Identification Numbers.
+
+		2.1.2. Flow Base Number: Multiply the flow number (2) by 10: 2 * 10 = 20. Add the result (20) to the starting number (2000): 2000 + 20 = 2020. The resulting value (2020) represents the flow base number for flow-2.
+
+		2.1.3. Block Base Number: Add the block number (3) to the flow base number (2020): 2020 + 3 = 2023. The resulting value (2023) represents the block base number for flow-2, block-3.
+
+		2.1.4. Microservice Unix User Identification Number: Add the microservice number (3) to the block base number (2023): 2023 + 3 = 2026. The resulting value (2026) represents the Unix User Identification Number for flow-2, block-3, microservice-03.
+
+		2.1.5. This formula ensures that each microservice has a unique and identifiable Unix User Identification Number based on its specific flow, block, and microservice designations.

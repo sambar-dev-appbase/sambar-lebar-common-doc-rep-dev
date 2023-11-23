@@ -30,6 +30,8 @@
 		2.4.3. ACL classifier: The classifier "acl" explicitly indicates that the resource is an ACL.
 		2.4.4. Example: The ACL named "ua0203-no-us-en-sd2-lo-user-account-number-0203-acl-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to access the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of ACLs.
 
-	2.5. Additional Characteristics: In addition to the resource identifiers, ACLs also incorporate the "acl" classifier to explicitly indicate their type. This classifier serves as a clear identifier for the resource type and aligns with the naming convention for other infrastructure components.
+	2.5. Environment Two- or Three-Digit Code: This specifies the environment in which the Access Control List resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
 
-	2.6. The naming convention for ACLs in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved and facilitates easy identification of ACLs.
+	2.6. Additional Characteristics: In addition to the resource identifiers, ACLs also incorporate the "acl" classifier to explicitly indicate their type. This classifier serves as a clear identifier for the resource type and aligns with the naming convention for other infrastructure components.
+
+	2.7. The naming convention for ACLs in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved and facilitates easy identification of ACLs.

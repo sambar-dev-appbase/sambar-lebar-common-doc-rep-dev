@@ -27,7 +27,7 @@
 
 		2.3.2. Flow and Block Numbers: These identify the specific flow and block associated with the RDS cluster. This granular information provides a deeper understanding of the cluster's role within the overall data architecture.
 
-		2.3.3. Environment Two-Digit Code: This specifies the environment in which the RDS cluster resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev). This code facilitates data isolation and management, ensuring that data access and usage align with the intended environment.
+		2.3.3. Environment Two- or Three-Digit Code: This specifies the environment in which the RDS cluster resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev). This code facilitates data isolation and management, ensuring that data access and usage align with the intended environment.
 
 	2.4. By adhering to a consistent and informative naming convention for RDS clusters, we achieve several benefits:
 

@@ -23,6 +23,6 @@
 
 		2.1.2. Associated Resource Name: The name of the associated resource, such as an RDS database, is directly integrated into the subnet group name. This approach provides clear context and effectively identifies the resource or service that the subnet group safeguards.
 
-		2.1.3. Two-Digit Environment Code: A two-digit environment code is incorporated into the subnet group name to specify the environment in which the subnet group resides. This code, such as "sd2" for Sambar Development, helps in maintaining data isolation and management, ensuring that subnet group usage aligns with the intended environment.
+		2.1.3. Environment Two- or Three-Digit Code: An environment two- or three-digit code is incorporated into the subnet group name to specify the environment in which the subnet group resides. This code, such as "sd2" for Sambar Development, helps in maintaining data isolation and management, ensuring that subnet group usage aligns with the intended environment.
 
 		2.1.4. By incorporating these characteristics, the subnet group naming convention provides a clear and structured approach to identifying and managing subnet groups within the infrastructure. This naming scheme promotes consistent naming practices and enhances overall network management.

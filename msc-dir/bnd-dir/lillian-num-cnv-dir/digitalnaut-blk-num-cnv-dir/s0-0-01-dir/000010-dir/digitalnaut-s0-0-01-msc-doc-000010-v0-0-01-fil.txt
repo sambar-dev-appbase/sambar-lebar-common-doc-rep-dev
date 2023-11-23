@@ -7,12 +7,20 @@
 	1.5. Format: txt
 	1.6. Subject metadata:
 		1.6.1. Alias: digitalnaut
-		1.6.2. Name: 
+		1.6.2. Name: block-numbering-convention
 		1.6.3. FQID: none
 		1.6.4. Version: s0-0-01
 		1.6.5. Action: 000010
 	1.7. Revision: This is the first version uploaded to the ChatBOT.
 	1.8. Author: Anna/Play.Miami
-	1.9. Date: November 16, 2023
+	1.9. Date: November 21, 2023
 
 2. Subject Introduction:
+
+	2.1. Each type of flow functionality is further divided into multiple blocks. Block numbers are incremented by 3, allowing for the insertion of new blocks between existing ones. This numbering system ensures that future additions to the flow structure can be accommodated without disrupting the existing arrangement.
+
+	2.2. The numbering pattern starts with 3 and increments by 3, leaving gaps between consecutive numbers. These gaps serve as reserved numbers, available for adding new blocks between existing ones. For instance, flow-2 has blocks numbered 3, 6, 9, 12, and 15. The reserved numbers between these blocks are 1, 2, 4, 5, 7, 8, 10, 11, 13, and 14.
+
+	2.3. If a new block needs to be inserted between existing blocks, one of the reserved numbers is assigned to it. The choice between 1 and 2, 4 and 5, 7 and 8, 10 and 11, 13 and 14 depends on the functionality of the new block. If it aligns more closely with block-3, number 4 is assigned. Conversely, if it resembles block-6 more closely, number 5 is assigned.
+
+	2.4. This approach ensures that new blocks can be seamlessly integrated into the flow structure without disrupting the existing numbering system.

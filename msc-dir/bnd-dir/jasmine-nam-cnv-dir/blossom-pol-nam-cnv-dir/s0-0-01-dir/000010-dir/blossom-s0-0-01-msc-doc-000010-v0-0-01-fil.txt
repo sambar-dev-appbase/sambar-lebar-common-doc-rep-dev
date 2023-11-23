@@ -33,8 +33,10 @@
 
 		2.4.4. Read/Write Indicator: A one-letter code, either "r" for read or "w" for write, indicates the type of access granted by the IAM policy.
 
-		2.4.5. Example: The IAM policy named "ua0203-no-us-en-sd2-lo-user-account-number-0203-r-policy-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to read ("r") data from the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of IAM policies.
+		2.4.5. Environment Two- or Three-Digit Code: This specifies the environment in which the IAM policy resides, such as Sambar Development (sd2), LeBar Development (ld), or BOTops Development (dev), facilitating data isolation and management.
 
-		2.4.6. Additional Characteristics: In addition to the resource identifiers and read/write indicator, IAM policies also incorporate two-digit environment codes, such as "sd2" for Sambar Development, to specify the environment in which the IAM policy resides. This code helps in maintaining data isolation and management, ensuring that IAM policy usage aligns with the intended environment.
+		2.4.6. Example: The IAM policy named "ua0203-no-us-en-sd2-lo-user-account-number-0203-r-policy-sd2" indicates that the microservice "ua0203-no-us-en-sd2-lo" has permission to read ("r") data from the database "user-account-number-0203-sd2." This naming scheme clearly conveys the relationship between the two resources and facilitates easy identification of IAM policies.
 
-		2.4.7. The naming convention for IAM policies in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved, facilitates easy identification of IAM policies, and promotes consistent naming practices, thereby enhancing overall network management and security.
+		2.4.7. Additional Characteristics: In addition to the resource identifiers and read/write indicator, IAM policies also incorporate two-digit environment codes, such as "sd2" for Sambar Development, to specify the environment in which the IAM policy resides. This code helps in maintaining data isolation and management, ensuring that IAM policy usage aligns with the intended environment.
+
+		2.4.8. The naming convention for IAM policies in the Sambar, LeBar, and BOTops web applications is designed to be clear, concise, and informative. It reflects the relationship between the resources involved, facilitates easy identification of IAM policies, and promotes consistent naming practices, thereby enhancing overall network management and security.

@@ -27,7 +27,7 @@
 
 		2.3.2. Cluster Serial Number: Subnets associated with clusters, such as EKS clusters, incorporate a serial number, such as "one," "two," or "three," to differentiate between multiple clusters within the same service type. This numbering scheme provides a structured approach to identifying subnets related to specific clusters.
 
-		2.3.3. Two-Digit Environment Code: Subnet names include a two-digit environment code, such as "sd2" for Sambar Development, to indicate the environment in which the subnet resides. This code facilitates data isolation and management, ensuring that subnet usage aligns with the intended environment.
+		2.3.3. Environment Two- or Three-Digit Code: Subnet names include an environment two- or three-digit code, such as "sd2" for Sambar Development, to indicate the environment in which the subnet resides. This code facilitates data isolation and management, ensuring that subnet usage aligns with the intended environment.
 
 		2.3.4. Resource Classifier: To clearly identify the resource type, the word "subnet" is included in the subnet name.
 

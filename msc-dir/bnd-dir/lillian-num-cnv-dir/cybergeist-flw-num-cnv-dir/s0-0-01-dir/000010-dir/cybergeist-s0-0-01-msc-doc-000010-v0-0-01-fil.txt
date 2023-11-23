@@ -7,12 +7,30 @@
 	1.5. Format: txt
 	1.6. Subject metadata:
 		1.6.1. Alias: cybergeist
-		1.6.2. Name: 
+		1.6.2. Name: flow-numbering-convention
 		1.6.3. FQID: none
 		1.6.4. Version: s0-0-01
 		1.6.5. Action: 000010
 	1.7. Revision: This is the first version uploaded to the ChatBOT.
 	1.8. Author: Anna/Play.Miami
-	1.9. Date: November 16, 2023
+	1.9. Date: November 21, 2023
 
 2. Subject Introduction:
+
+	2.1. Flow Functionality Types and Flow Numbering. There are three types of flow functionality:
+
+		2.1.1. Infrastructure
+		2.1.2. User-related
+		2.1.3. Analyst-related
+		
+		2.1.4. Each type of flow functionality is assigned a range of numbers:
+
+			2.1.4.1. Infrastructure flows: flow-0
+			2.1.4.2. User-related flows: flow-1 to flow-49
+			2.1.4.3. Analyst-related flows: flow-50 to flow-99
+
+		2.1.4.5. Flow numbers start with 0 and increment by 1. For example, flow-0 is the first infrastructure flow, flow-1 is the first user-related flow, and flow-50 is the first analyst-related flow.
+
+		2.1.4.6. Infrastructure flow has only one flow number, but it has multiple blocks. For example, infrastructure flow-0 has blocks 3, 6, 9, and so on.
+
+		2.1.4.7. User-related flows and analyst-related flows have their own range of flow numbers. There are no overlapping flow numbers between the different types of flow functionality.

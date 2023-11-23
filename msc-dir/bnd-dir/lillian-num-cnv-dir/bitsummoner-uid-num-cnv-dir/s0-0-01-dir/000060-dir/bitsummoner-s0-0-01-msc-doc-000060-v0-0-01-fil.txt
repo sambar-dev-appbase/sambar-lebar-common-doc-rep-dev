@@ -1,6 +1,6 @@
 1. Document metadata: 
 
-	1.1. Title:
+	1.1. Title: Unix User Numbering Convention for the Sambar, LeBar, and BOTops Web Applications
 	1.2. Description: 
 	1.3. Identification: bitsummoner-s0-0-01-msc-doc-000060
 	1.4. Version: v0-0-01
